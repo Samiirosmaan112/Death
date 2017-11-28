@@ -16,7 +16,7 @@ client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
   // Example of changing the bot's playing game to something useful. `client.user` is what the
   // docs refer to as the "ClientUser".
-  client.user.setGame("phelp", "https://go.twitch.tv/pallavbs"); // a game
+  client.user.setGame("d!help", "https://go.twitch.tv/pallavbs"); // a game
   client.user.setStatus("online"); // Set status to DnD
 
 });
@@ -157,7 +157,7 @@ client.on("message", (message) => {
       message.channel.send("👀").then((msg)=>{
       var i = 0;
       while (i < 50) {
-      msg.edit('<:eyesflipped:374082394816249856>')
+      msg.edit('<:eyes:>')
       msg.edit("👀");
       i++;
       }
